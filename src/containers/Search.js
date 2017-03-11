@@ -57,7 +57,7 @@ class Search extends React.Component {
     return (
       <div className="search">
         <div className="search__header">
-          <h2 className="search__title">Search</h2>
+          <h2 className="search__title">Sonic</h2>
           <div className="search__input__container">
             <SearchIcon
               className="search__input__icon"

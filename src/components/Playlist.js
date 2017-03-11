@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
 import className from 'classnames'
 import ClearIcon from 'react-icons/lib/md/clear'
+import PlaylistIcon from 'react-icons/lib/fa/list'
 
 const Playlist = (props) => {
   const {
@@ -12,7 +13,9 @@ const Playlist = (props) => {
 
   return (
     <div className="playlist">
+    
       <div className="playlist__header">
+        <PlaylistIcon className="playlist__icon" />
         <h2 className="playlist__title">Playlist</h2>
       </div>
       <ul className="playlist__body">

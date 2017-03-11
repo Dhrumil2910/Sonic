@@ -6,6 +6,10 @@ $susy: (
   gutters: 0,
 );
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 // Global variables
 $player-height: 60px;
 $navbar-height: 60px;

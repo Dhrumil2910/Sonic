@@ -1,6 +1,6 @@
 .playlist {
     @include span(4 of 12 last);
-    height: calc(100% - #{$navbar-height} - #{$player-height});
+    height: calc(100% - #{$player-height});
     border-left: solid 1px #262626;
     //background-color: #262626;
     &__header {
@@ -12,6 +12,16 @@
         -webkit-box-shadow: 0px 7px 1px -2px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 7px 1px -2px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 7px 1px -2px rgba(0, 0, 0, 0.75);
+    }
+    &__icon {
+            position: absolute;
+            font-size: 18px;
+            margin-top: -9px;
+            top: 50%;
+            right: 10px;
+            color: orange;
+            cursor: pointer;
+            float:right;
     }
     &__title {
         //margin: $common-padding;
@@ -46,6 +56,8 @@
         :hover {
             font-weight: bold;
             background-color: #262626;
+            color: white;
+            border-left: 3px solid #ff5412;
         }
         & + & {
             border-top: solid 1px #262626;

@@ -35,12 +35,6 @@ class Main extends React.Component {
 
     return (
       <div className="main">
-        <Navbar
-          changeAppMode={(mode) => () => dispatch(changeAppMode(mode))}
-          isModeChanging={app.isModeChanging}
-          mode={app.mode}
-        />
-        
         <Search />
         <Playlist
           className="playlist"

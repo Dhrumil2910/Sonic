@@ -1,14 +1,14 @@
 .search {
     @include span(8 of 12);
-    height: calc(100% - #{$navbar-height} - #{$player-height} - #{$panel-header-height});
+    height: calc(100% - #{$player-height} - #{$panel-header-height} - 4px);
     &__header {
         background-color: #262626;
         padding: $common-padding;
     }
     &__title {
-        font-size: 18px;
+        font-size: 30px;
         display: inline;
-        color: white
+        color: #ff5412;
     }
     &__input__container {
         position: relative;
@@ -17,7 +17,7 @@
     }
     &__input {
         width: 400px;
-        border: solid 2px #d54b5f;
+        border-style : none;
         border-radius: 30px;
         padding: 0 16px;
         margin-top: -3px;
@@ -26,6 +26,8 @@
         //float: right;
         height: 36px;
         outline: none;
+        background-color: #36383d;
+        color: darkgrey;
         &__icon {
             position: absolute;
             cursor: pointer;
@@ -47,8 +49,8 @@
         &__item {
             position: relative;
             z-index: 99;
-            padding: 4px 7px;
-            line-height: 54px;
+            padding: 2px 2px;
+            line-height: 100px;
             user-select: none;
             &__pad {
                 position: relative;
@@ -97,7 +99,7 @@
             }
         }
         &__thumbnail {
-            width: 80px;
+            width: 150px;
             float: left;
             margin-right: 10px;
         }
