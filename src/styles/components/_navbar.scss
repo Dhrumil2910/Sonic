@@ -1,0 +1,53 @@
+.navbar {
+  height: $navbar-height;
+  background-color: #222428;
+  padding: 0 $common-padding;
+  position: relative;
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: $navbar-height;
+    float: left;
+    color: #ff5412;
+  }
+  
+  .app-cover {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: $navbar-height;
+    z-index: 40000;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__btn-group {
+    float: right;
+  }
+
+  &__mode-btn {
+    margin: 12px 0 0 0;
+    height: 34px;
+    padding: 0 14px;
+    color: #555555;
+    background-color: #e2e2e2;
+    border: 1px solid #b5b5b5;
+    border-radius: 1px;
+
+    &--active {
+      background-color: #fff;
+      color: #222222;
+    }
+
+    & + & {
+      margin-left: -1px;
+    }
+  }
+}

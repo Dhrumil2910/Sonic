@@ -1,0 +1,27 @@
+@import "~susy/sass/susy";
+
+// Susy2 Global Setting
+$susy: (
+  columns: 12,
+  gutters: 0,
+);
+
+// Global variables
+$player-height: 60px;
+$navbar-height: 60px;
+$common-padding: 20px;
+$panel-header-height: 74px;
+
+@import "base/reset";
+@import "base/variables";
+@import "base/default";
+
+@import "containers/main";
+
+@import "components/button";
+@import "components/tab";
+@import "components/navbar";
+@import "components/search";
+@import "components/player";
+@import "components/playlist";
+@import "components/divider";
