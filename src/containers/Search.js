@@ -20,9 +20,7 @@ class Search extends React.Component {
   }
 
   handleSearchInputKeyPress(e) {
-    if (e.key === 'Enter') {
       this.search(e.target.value)
-    }
   }
 
   handleSearchIconClick() {

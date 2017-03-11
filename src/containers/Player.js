@@ -44,10 +44,6 @@ class Player extends React.Component {
     this.handleShuffleButtonClick = this.handleShuffleButtonClick.bind(this)
     this.handleRepeatButtonClick = this.handleRepeatButtonClick.bind(this)
     this.handleVolumeButtonClick = this.handleVolumeButtonClick.bind(this)
-
-    this.state = {
-      innerVolume: 50,
-    }
   }
 
   componentDidUpdate(prevProps) {
@@ -70,7 +66,6 @@ class Player extends React.Component {
     }
 
     if (_player.volume !== volume) {
-      this.setState({ innerVolume: volume }) // eslint-disable-line
       youtubePlayer.setVolume(volume)
     }
 
@@ -194,9 +189,7 @@ class Player extends React.Component {
         />
         <Slider
           className="player__volume-control"
-          onChange={v => this.setState({ innerVolume: v })}
-          onAfterChange={v => dispatch(setVolume(v))}
-          value={this.state.innerVolume}
+          onChange={v => dispatch(setVolume(v))}
         />
       </div>
     )
@@ -244,7 +237,6 @@ class Player extends React.Component {
     const { mode } = app
 
     const style = {}
-    
 
     return (
       <div
